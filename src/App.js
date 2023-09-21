@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Services from './components/Services/Services';
 import ThreeDPrintingService from './components/ThreeDPrintingService/ThreeDPrintingService';
+import Producers from './components/Producers/Producers';
 
 function App() {
   return (
@@ -21,9 +22,14 @@ function App() {
           <Route exact path="/services">
             <Services />
           </Route>
-          {/* Routes for individual service pages */}
+          {/* Routes for 3D Printing service pages */}
           <Route path="/services/3d-printing">
             <ThreeDPrintingService />
+          </Route>
+
+          {/* Route for Producers page */}
+          <Route exact path="/producers">
+            <Producers />
           </Route>
         </Switch>
       </div>

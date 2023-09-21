@@ -1,52 +1,42 @@
-/* Style the main container */
+/* Default styles for smaller screens */
 .services {
     padding: 20px;
     text-align: center;
-  }
-  
-  /* Style the heading */
-  .services h1 {
+}
+
+.services h1 {
     font-size: 28px;
-    color: #333; /* Dark text color */
-    margin-bottom: 20px; /* Space below the heading */
-  }
-  
-  /* Create a grid layout for the service boxes */
-  .services .service-grid {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.services .service-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
-    gap: 20px; /* Spacing between boxes */
-    justify-items: center; /* Center items horizontally */
-  }
-  
-  /* Style individual service boxes */
-  .services .service-box {
-    background-color: #f4f4f4; /* Box background color */
-    padding: 20px; /* Padding inside the box */
-    border: 1px solid #ccc; /* Border around the box */
-    border-radius: 5px; /* Rounded corners */
-    text-align: center; /* Center text */
-    transition: transform 0.3s ease; /* Smooth scaling on hover */
-    height: 200px; /* Fixed height for each box */
-    width: 200px;
-  }
-  
-  /* Style links to service pages */
-  .services a {
-    text-decoration: none;
-    color: #007BFF; /* Link color */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
-  }
-  
-  /* Change link color on hover */
-  .services a:hover {
-    color: #0056b3; /* Hover color */
-  }
-  
-  /* Hover effect on service boxes */
-  .services .service-box:hover {
-    transform: scale(1.05); /* Scale the box on hover */
-  }
-  
-  /* Add additional styling as needed */
-  
+    grid-template-columns: repeat(1, 1fr); /* Single column for smaller screens */
+    gap: 20px;
+    justify-items: center;
+}
+
+.services .service-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 200px;
+    width: 150px; /* Take the full width of the container */
+    margin-bottom: 20px; /* Add spacing between boxes */
+}
+
+/* Styles for larger screens (e.g., screens wider than 768px) */
+@media screen and (min-width: 768px) {
+    .services .service-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+    }
+
+    .services .service-box {
+        width: 200px; /* Adjust the width for larger screens */
+        margin-bottom: 0; /* Remove spacing between boxes */
+    }
+}

@@ -9,37 +9,37 @@ function Services(){
                 {/* 3D Printing */}
                 <Link to="/services/3d-printing">
                     <div className="service-box">
-                        <p>3D printing</p>
+                        <h3>3D printing</h3>
                     </div>
                 </Link>
                 {/* Sewing */}
                 <Link to="/services/sewing">
                     <div className="service-box">
-                        <p>Sewing</p>
+                        <h3>Sewing</h3>
                     </div>
                 </Link>
                 {/* Audio Booth */}
                 <Link to="/services/audio-booth">
                     <div className="service-box">
-                        <p>Audio Booth</p>
+                        <h3>Audio Booth</h3>
                     </div>
                 </Link>
                 {/* Button Making */}
                 <Link to="/services/button-making">
                     <div className="service-box">
-                        <p>Button Making</p>
+                        <h3>Button Making</h3>
                     </div>
                 </Link>
                 {/* Sticker Printing */}
                 <Link to="/services/sticker-printing">
                     <div className="service-box">
-                        <p>Sticker Printing</p>
+                        <h3>Sticker Printing</h3>
                     </div>
                 </Link>
                 {/* iMacs with Adobe Creative Cloud */}
                 <Link to="/services/imacs-adobe">
                     <div className="service-box">
-                        <p>iMacs with Adobe Creative Cloud</p>
+                        <h3>iMacs with Adobe Creative Cloud</h3>
                     </div>
                 </Link>
             </div>
