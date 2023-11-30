@@ -1,0 +1,42 @@
+/* Default styles for smaller screens */
+.services {
+    padding: 20px;
+    text-align: center;
+}
+
+.services h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.services .service-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Single column for smaller screens */
+    gap: 20px;
+    justify-items: center;
+}
+
+.services .service-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 200px;
+    width: 150px; /* Take the full width of the container */
+    margin-bottom: 20px; /* Add spacing between boxes */
+}
+
+/* Styles for larger screens (e.g., screens wider than 768px) */
+@media screen and (min-width: 768px) {
+    .services .service-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+    }
+
+    .services .service-box {
+        width: 200px; /* Adjust the width for larger screens */
+        margin-bottom: 0; /* Remove spacing between boxes */
+    }
+}

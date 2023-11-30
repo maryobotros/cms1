@@ -1,0 +1,45 @@
+/* Navbar.css */
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #2e5f98; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px 0; /* Padding top and bottom */
+    display: flex; /* Place h1 and ul on the same row */
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Style the h1 element */
+  .navbar h1 a{
+    font-size: 24px; /* Increase font size */
+    padding-left: 10px;
+    color:aliceblue
+  }
+
+  .navbar h1 a:hover {
+    color: #fff !important; /* Set the text color to the same as the default color */
+  }
+  
+  /* Style the navigation links */
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Spacing between links */
+    padding-right: 10px;
+  }
+  
+  /* Style the links themselves */
+  .navbar a {
+    text-decoration: none; /* Remove underlines */
+    color: #fff; /* Link color */
+    font-weight: bold; /* Bold text */
+    font-size: 18px; /* Font size */
+  }
+  
+  /* Change link color on hover */
+  .navbar a:hover {
+    color: #b5a8a7;
+  }
+  
